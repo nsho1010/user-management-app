@@ -1,13 +1,15 @@
+import { Button, ChakraProvider } from "@chakra-ui/react"
+import theme from "./thema/thema"
 
 
 function App() {
 
   return (
     <>
-      <div>
-        <p>Hello</p>
-      </div>
-
+      <ChakraProvider theme={theme}>
+        <Button colorScheme="teal">ボタン</Button>
+        <p>aaaaaaaaa</p>
+      </ChakraProvider>
     </>
   )
 }
