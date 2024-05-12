@@ -6,7 +6,7 @@ import { useAllUsers } from '../../hooks/useAllUsers';
 export const UserManagement:FC = memo (() => {
     const { getUsers , loading ,users } = useAllUsers()
 
-    useEffect(() => getUsers(),[]);
+    useEffect(() => getUsers(),[getUsers]);
 
     return (
         <>
